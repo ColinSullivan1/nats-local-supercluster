@@ -1,7 +1,7 @@
 #!/bin/sh
 
 mkdir -p logs
-rm logs/*
+rm -rf logs/*
 
 nats-server -config region1/server_r1_a.conf &
 nats-server -config region1/server_r1_b.conf &
